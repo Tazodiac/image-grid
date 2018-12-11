@@ -31,4 +31,11 @@ section: {
   display: block;
 }
 
-s
+img {
+  display: block;
+  width: 100%;
+}
+
+.photo:nth-child (2), .photo:nth-child(5) {
+  display: none;
+}
