@@ -7,7 +7,7 @@
 html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.3 sans-serif;
@@ -56,12 +56,22 @@ img {
     width: 33.3333%;
   }
 
+  .photo:nth-child(5) {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
   .photo:nth-child(1) {
-    dislplay: inline-block
+    display: inline-block;
     width: 66.6666%;
   }
+
+  .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4), .photo:nth-child(5) {
+    display: inline-block;
+    width: 33.3333%;
+  }
+
 }
